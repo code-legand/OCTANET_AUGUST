@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 - Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body class="min-h-screen" style="font-family: 'Montserrat', sans-serif;">
+
+
+    <nav class="absolute top-0 left-0 w-full h-24 flex align-middle">
+        <div class="navbar bg-transparent lg:px-8">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost">
+                        <img src="images/firelogo.png" class="h-8 w-8">
+                        <a class="normal-case text-xl">FireWatch</a>
+                    </label>
+                </div>
+
+            </div>
+            <div class="navbar-end hidden lg:flex text-white">
+                <ul class="menu menu-horizontal text-base font-medium">
+                    <li><a>About</a></li>
+                    <li><a>Features</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-yellow-500 text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div class="flex flex-col-reverse lg:flex-row">
+        <div class="bg-white pt-28 w-full text-center lg:text-left lg:w-1/2 lg:pt-60 lg:px-40">
+            <div class="text-4xl lg:text-6xl font-bold leading-tight">
+                Your Data Is Our Business
+            </div>
+            <div class="text-sm font-light pt-2">
+                Firewatch simply hooks into firebase's database layer
+            </div>
+            <div class="mt-8">
+                <button
+                    class="btn bg-blue-500 text-white p-2 flex align-middle justify-center h-auto hover:text-gray-800 mx-auto lg:mx-0">
+                    <img src="images/google_icon.png" alt="google_icon" class="w-8">
+                    <span class="ps-2">Sign In With Google</span>
+                </button>
+            </div>
+
+        </div>
+        <div class="bg-yellow-400 lg:w-1/2 pt-40 rounded-b-full lg:rounded-bl-full lg:rounded-b-none">
+            <img src="images/banner_image.png" alt="banner_image" class="mx-auto">
+        </div>
+    </div>
+
+    <div class="text-center mt-24">
+        <div>
+            <div class="font-bold text-3xl lg:text-4xl">
+                App Features
+            </div>
+        </div>
+        <div class="font-medium text-base mx-8 lg:w-1/2 lg:mx-auto mt-8">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, velit! Tempora voluptatibus nemo,
+            quidem
+            repudiandae ab soluta qui ipsam suscipit accusamus mollitia, incidunt ut molestiae laudantium quasi enim
+            velit
+            error.
+        </div>
+        <div class="mt-10 flex flex-col lg:flex-row justify-center lg:w-2/3 mx-auto mb-20">
+            <div class="h-max border shadow-md p-4 mx-6 rounded-md mb-6 lg:mb-0">
+                <div class="p-6">
+                    <img src="images/compute_icon.png" alt="compute_icon"
+                        class="rounded-full border bg-green-300 mx-auto w-20">
+                </div>
+                <div class="font-semibold mx-auto">
+                    Compute
+                </div>
+                <div class="text-sm text-center mt-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem maiores dolore quidem
+                    consectetur
+                    possimus, blanditiis soluta ducimus est reprehenderit labore odio similique repudiandae? Velit,
+                    quaerat!
+                    Voluptatem expedita autem facilis ipsam!
+                </div>
+            </div>
+            <div class="h-max border shadow-md p-4 mx-6 rounded-md mb-6 lg:mb-0">
+                <div class="p-6">
+                    <img src="images/network_icon.png" alt="network_icon"
+                        class="rounded-full border bg-red-300 mx-auto w-20">
+                </div>
+                <div class="font-semibold mx-auto">
+                    Network
+                </div>
+                <div class="text-sm text-center mt-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem maiores dolore quidem
+                    consectetur
+                    possimus, blanditiis soluta ducimus est reprehenderit labore odio similique repudiandae? Velit,
+                    quaerat!
+                    Voluptatem expedita autem facilis ipsam!
+                </div>
+            </div>
+            <div class="h-max border shadow-md p-4 mx-6 rounded-md">
+                <div class="p-6">
+                    <img src="images/storage_icon.png" alt="storage_icon"
+                        class="rounded-full border bg-yellow-300 mx-auto w-20">
+                </div>
+                <div class="font-semibold mx-auto">
+                    Storage
+                </div>
+                <div class="text-sm text-center mt-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem maiores dolore quidem
+                    consectetur
+                    possimus, blanditiis soluta ducimus est reprehenderit labore odio similique repudiandae? Velit,
+                    quaerat!
+                    Voluptatem expedita autem facilis ipsam!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative  hidden lg:block">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 15" class="absolute -top-96 opacity-70">
+            <path d="M 0 0 C 6 5 5 13 0 13" fill="#d7e4ff" />
+        </svg>
+    </div>
+    <div class="relative block lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 15" class="absolute -top-[800px] opacity-30">
+            <path d="M 0 0 C 6 5 5 13 0 13" fill="#d7e4ff" />
+        </svg>
+    </div>
+
+    <div class="text-center mt-36">
+        <div>
+            <div class="font-bold text-3xl lg:text-4xl">
+                Check Out What's New
+            </div>
+        </div>
+        <div class="font-medium text-base mx-4 lg:w-1/2 lg:mx-auto mt-8">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, velit! Tempora voluptatibus nemo,
+            quidem
+            repudiandae ab soluta qui ipsam suscipit accusamus mollitia, incidunt ut molestiae laudantium quasi enim
+            velit
+            error.
+        </div>
+        <div class="mt-16 lg:mt-10">
+            <img src="images/infrastructure.png" alt="infrastructure" class="mx-auto">
+        </div>
+    </div>
+
+    <div class="relative  hidden lg:block">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 0 40 10" class="absolute -top-96 opacity-70">
+            <path d="M 0 0 C -2 3 -2 7 0 8" fill="#d7e4ff" />
+        </svg>
+    </div>
+    <div class="relative block lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 0 10 10" class="absolute -top-[750px] opacity-40">
+            <path d="M 0 0 C -2 3 -2 7 0 8" fill="#d7e4ff" />
+        </svg>
+    </div>
+    
+
+    <div class="relative">
+        <div class="bottom-0 left-0 absolute w-full">
+            <div class="text-center text-white">
+                <div class="text-2xl lg:text-4xl font-bold mx-auto">Step Inside And See</div>
+                <div class="text-2xl lg:text-4xl font-bold mx-auto mt-4">What The Future Looks Like</div>
+                <div class="text-base font-light mt-6">Lorem ipsum dolor sit amet.</div>
+                <div class="mt-8">
+                    <button
+                        class="text-white btn bg-blue-500 p-2 mx-auto mb-10 flex align-middle justify-center h-auto hover:text-gray-800">
+                        <img src="images/google_icon.png" alt="google_icon" class="w-8">
+                        <span class="ps-2">Sign In With Google</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -5 13 4" class="mx-auto hidden lg:block">
+            <path d="M 0 0 C 1 -4 10 -7 11 0" fill="#3784fc" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="5 -5 4 4" class="mx-auto block lg:hidden">
+            <path d="M 0 0 C 1 -4 10 -7 11 0" fill="#3784fc" />
+        </svg>
+    </div>
+
+
+</body>
+
+</html>

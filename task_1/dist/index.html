@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 - Landing Page</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/index-87dc7745.css">
+</head>
+
+<body class="min-h-screen" style="font-family: 'Montserrat', sans-serif;">
+
+
+    <nav class="absolute top-0 left-0 w-full h-24 flex align-middle">
+        <div class="navbar bg-transparent lg:px-8">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost">
+                        <img src="data:image/png;base64,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" class="h-8 w-8">
+                        <a class="normal-case text-xl">FireWatch</a>
+                    </label>
+                </div>
+
+            </div>
+            <div class="navbar-end hidden lg:flex text-white">
+                <ul class="menu menu-horizontal text-base font-medium">
+                    <li><a>About</a></li>
+                    <li><a>Features</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-yellow-500 text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div class="flex flex-col-reverse lg:flex-row">
+        <div class="bg-white pt-28 w-full text-center lg:text-left lg:w-1/2 lg:pt-60 lg:px-40">
+            <div class="text-4xl lg:text-6xl font-bold leading-tight">
+                Your Data Is Our Business
+            </div>
+            <div class="text-sm font-light pt-2">
+                Firewatch simply hooks into firebase's database layer
+            </div>
+            <div class="mt-8">
+                <button
+                    class="btn bg-blue-500 text-white p-2 flex align-middle justify-center h-auto hover:text-gray-800 mx-auto lg:mx-0">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEy0lEQVR4nO2ZbUwbZQDHL45M5vygycRkL0YFlWw9oHdFYSsr69uItBksIYwOwiC8KKwq4EAY8TYYsoG8CIOFCduCzmiTQbveNSC4q7p9chlkEo0fTIxrC2uPFzcXoC885sggdYP2bj1ajP0n/y9N7+nvd9fnuadXCAommGB8DsBEIdMVaB5VjBDWTPTOuFIwNy4TuCx7Y4FFGAss+wQLEwp09q4KNdsK+QNUKT8XYFAIFOj8VQ7HUQXIDUsS6jTHxwI2tcgFTlsecmO6KjrG/+DVgjeoPPS2JUHACnpFEWEssB1BRmeOo+F+gZ/6EGk2SwQLvoI/JiIWuGY+QE6vGThoittky0F+4Rrc/EhtOcgIwNI2cgo/0wk/b1UhE2sNb37YaTW/lTN4cFEUak1Hrf6CpwoQEuIyVD7ys9/g8zmGny5B2lhNRDnqpPKRm1Ml/OqpkzGiexi65X5ZVJjtGCyhSmMwKhcZpZfPVc68kVP4mVo03CITuJiCT5UgXUwmnxlDn7Ed5V9yF6G4hqczqUZ+YgJvPYyY7tfxXmQ7Pr3uWzOQ8TWBB9/v2jE/DM9PlfGBebfHJe8W0EAboPUWBwmfdhhhQPfvc9FgXPL4HdeaiZrWJTzQpG2wG3mmJQG6c7ooYFWhbt95gZMqid4GrcfYjbx4d/jlXoPBvbqYxb3LpBrphtZr7Ea4akWBh31wIXoCqJOehtZr7CR8xZOAwwi3sRnvhXwj4KrJVT1/eP1Ah5E35lGAjEoKlMBbpd/Mev1AOwlPehKYJXdGBErgtWLCxURg3pMAIHc+GyiBbYXD4H8hMOlJYO6HqNcDJRBRRCz8xyexhtEk7vOyjLYHSuDt4z0mBgK8ytXg717jg1pc9qBJk7YJ4jiNvWWbee/pnJ4E3q1v0DMQgONWgh8ZfhNk6RRA0Z8CWgziC1wLqM/Ud3u7AjXtFSqvAwEAPWU38u4sgduNMOgfEIIU7YFFeLqHdQpnx0DCDq7g61sqXo4s1rs8wUcexZ0YiTF7mucwwvU0/AwZDWpw+TK4eyuuyi0kKfL58SBGYiHJlT0Wb2c/p7b1OuNBAQlv/21YYM/TJa8Iv9QTuGzUFwmMxELSsY4xb/BbC78DNZ99hLIavA6XjnqCX74Serml+9vdW9nCdw3teSm/sfZ3JqtP2sedY2zHh3SDCa9kahUuJhKZOoWzjUjswS5mh3obt3dQtrkFl3yu0ipcqX2p4OCpVo/w4UWGBexTjNXNczkdhLhZyUDAXaROLx05axBjXxEJ4iuD8WGXSdGWHsMeYbshseYELr9Jv8f9GGVfKshqxkBYAbmiQMGpxk7Il9QTkhGmAr40u+t9sP2doX/Bp1Sf/xXyNRpN2sZjuv3jfpHozQWRav0i/L7yL6gi7CyrjeOqIUnRc5V6ucUfEoe+VoGMmlYT1omFcQLvJhF6EpfdZjMnnqS1hHTEYFjD39xdhr0Nh7RKRqsTm2Zola5zRGID5I/06kQRdbj01kG37cWTNrX/wOJZvzwkfBXydy4NCtEzuPTHHG2yg/WE1Skcn+DS61/iMv//yfdoNADacB4XH2nCxfpKXPZngTZ5NkurcNFXiN4EpmuVC/Rr5Vf3mxoICdFlSMymj4GCCSYYyNf8A50RcaYC8geEAAAAAElFTkSuQmCC" alt="google_icon" class="w-8">
+                    <span class="ps-2">Sign In With Google</span>
+                </button>
+            </div>
+
+        </div>
+        <div class="bg-yellow-400 lg:w-1/2 pt-40 rounded-b-full lg:rounded-bl-full lg:rounded-b-none">
+            <img src="/assets/banner_image-49540099.png" alt="banner_image" class="mx-auto">
+        </div>
+    </div>
+
+    <div class="text-center mt-24">
+        <div>
+            <div class="font-bold text-3xl lg:text-4xl">
+                App Features
+            </div>
+        </div>
+        <div class="font-medium text-base mx-8 lg:w-1/2 lg:mx-auto mt-8">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, velit! Tempora voluptatibus nemo,
+            quidem
+            repudiandae ab soluta qui ipsam suscipit accusamus mollitia, incidunt ut molestiae laudantium quasi enim
+            velit
+            error.
+        </div>
+        <div class="mt-10 flex flex-col lg:flex-row justify-center lg:w-2/3 mx-auto mb-20">
+            <div class="h-max border shadow-md p-4 mx-6 rounded-md mb-6 lg:mb-0">
+                <div class="p-6">
+                    <img src="data:image/png;base64,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" alt="compute_icon"
+                        class="rounded-full border bg-green-300 mx-auto w-20">
+                </div>
+                <div class="font-semibold mx-auto">
+                    Compute
+                </div>
+                <div class="text-sm text-center mt-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem maiores dolore quidem
+                    consectetur
+                    possimus, blanditiis soluta ducimus est reprehenderit labore odio similique repudiandae? Velit,
+                    quaerat!
+                    Voluptatem expedita autem facilis ipsam!
+                </div>
+            </div>
+            <div class="h-max border shadow-md p-4 mx-6 rounded-md mb-6 lg:mb-0">
+                <div class="p-6">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAANyklEQVR4nO1beXhV1bVfezjn3CHJTchMRkISEpIQkhAChCkEGWIMBCUQhgqotFBAEBVRMIhYKIhWQARRKrYO1Zb6FMUqWr/6Vb/a16fv1fqktva11trB1qlt7hnu2f3W5t7LnQJJm5vS16zvW3/knn3O2et31rx2AAZpkAZpkAbp76LhANAK/8Z0DAAsAHAN4DvxXScBoAMuAMoGgMZ/4P4kAJgBAEUAwPpwzzsAsAb+xSgfAK4ilJ8gjP8JAGwAEGFMqAFMOQ0AXwaA6QCg9PEdBN+haI7ThFKLq+rvGWN3AUAy/JOIAsClVNFeBkJspjktIESQhFQf/p1V22yriUNMWnWxIO4Ui7sSbcoVm3DVB5T5gKsfAZA7ACCvNy9jjB3gimot2bxF7HzyGbHhwCGRnpPr5Zp22q85A0ozqaL9lCqaWTC1w6d50kyWVWrwKx8SRHFYdavvEEteFMKVWeDly48K9St/ECRtmFHQ1GlVLLrBJpTZtLzJR3KrvUCoCYQdBICUc7xvAiHEvuP5l8QLugjyU3/4RKQOHeoljN0+UIInEcYfIYT6yuZdbU297UnBHW6LT7jc0u7pFrSsSc+su8hA4UMB0O4TQt3yGpqBfdEd3xUzD7wiUDt4dZuprDshSGapDlz9IwBc0sN7bx/ZML47VPgAr7lzn1AdjvcHQvhyqqjvJg4d7r343tdF27G3heJKMvn09bZ2xBbK5u9LAfH3WAAgs3FLrdTKiTpea3vwtNA8aQafdIWlHTYEb9tmA6FoPl/y23so3d+0oNOKBcC2b3xLcEX5c7yFr6dc+ThvYru58OnPROez3SIxp1jnNXNN7YhPCkfr5ps5E+aaAeFjAaDe+pYAIKL1/h/L67Pv+aGgisPHL79PXlc2nhKgJRjA+NciIsd1aTk53d/5sxEFwLw162zN6fxRPIUvB0IsT8FI3+LnTbnxkR0bfSw529D2f3JGuP0fC8I1X9POp8W5AJBAFdbr5R0b7cCa+nUHBNXclrr7V2dAWPNtqUmE0hdD9pDOOP+sbeUqOxSE7d98QlDGfAAwP17CpwFX36cjplrEkWgVNC+2Wo++KQjjtrL+ZFAo5fOPCuZMNAMAnQsA3nmXcKTlSTOQ/IIt0srGGXxsp6lsehkjhplZ02wx1WECpTeE7GUK4/yTIVlZ3klz5/mKRlV70TECIdviJTwA106QnCovOjh1238LkpJrKG6PxQrrzFCh2PilVvbYFitU+J4AwOdgXjDna+8E183Y97KQwlBml7avtRafssSU7ccFxnsAGB+yo1QAWAcAGDVuAYCq+AkPsBC4aqo73j67+R3/K2Ssp8zmMzb4AiZAkofqtV/YI3oDADpM4kq2xm08ItdcdOdLIim/TEetyqyZFjQN5OKWKy2qON79O5Kmf5icwNXfomcOU995XxLOzEJ92q5nhDurUEfbZZOuQBsUsw/+oHcAoB+oarGyRjfZQ0rH6IRSm09eaSnLjwqqOi10soH7O578SKhujw4A6wcagFXgStG1g38N2zhJL9JrP79bbg7tfVLXYyIpb4SJADiGZOtFMz7nG3/9UTH99lOi9b7/Ec70XJ1ftksom18RytonBZ+7XdDiiTqqOjo6DKHqzp+def4hXRBXitl449fDQKxfu09QRf0QALT+FHAIAOwHgNIY1whw7f94+45w2939S2m7oXEeeez6g4KlFegYyvjYhSZLydFluhtRCzCXx/SU1HkrF98oqpdvF9SZGOZHpC9pWGwVTl8S5ksWnvyLUFyJqAWX9ycANf5StzPGtQbM5dXb3w/33svuF6onI5jlBXjkgusEr5ptRAqj3f2ZICk5et3qO6W2hN6D2oGgaPs+Cn/HigeE4kk3MDKErh/RvtamqvYS9DMl9fD7Ljq80Rv1dSZdaec3LYzy9HmN7SZrXhdl59JkUgu8aBKR9yw48akEQO16PVzLdv1C/j734V+ErZ+5H7NM4huYyk91vxGp/tJxDRvrHb1iR5QwyUXVXt6xt08AICtuj6mseSI6QigOX/Pu74StRQ1iqhN9zcXxFp8BZSampFHCuFLMydu+GSWIO6vQi+bRVwCcaTk6v+LBaKCzy71j1twVtT69ckI3AIQmPVsA4E38ZP0JwDCpmnveC9/YvaboKdQ5UjJ1ZeUjfQYgIafUy5ceigagcpZe0bkpan1J60qbMP5oyF5XAMC3MV3rTwDGY7Gi3WuFb2zfnyQAl3z1rWhVdiWZGOL6CkBy8ejuWKZD6xdapXNWR62vXnGrYJrrFYgzdcr4XNduhHHlLAMByKqfZeQ0tocxJjK0uNGkNe1GJBPVZaUU11qR9yCrSakWzS63It9F0wp9zvTcqHs8w6osypUP4g3APEKZD1UwlPGLyFg+dZVgszeFMSY1BU0LwtYHGOsGWtUSdQ8ySc6xMkZNjronZfhoQXIq7Mj1tHyaAK7+Mt4AjENBI+M2pqTSN2x/M1rNnR5zyq1PxFTznlJhqeq51d2B1lkoF0xdYLFpa6LW8zm3CFBd3483AHkyDj/0bngYOmXJIki58dVoADxZ+sQtD/cdgIwSb8M1h6PuyR4zQ2ctm6PWs4nLfUAYNkriSoQw5p2262TUxrB9Fcvbk/Rh3nHX3tdnALCCjMz7z0SHEi9fcjB6/bD6bn/oiy9R1fFq1edujhGHG728bVv0l8yv9cYqhc8LgCPBxKZqpKZRrvqUa18IX3/IK4Apln+eEHfallJS0x0pDDpCXtseVcDQuvnWiDlf7BsA+z+WPiXQGwwwNkrP5CG/DluvXPM8OlvMBN0DAUAl5gKRfmDiTQ8J6k4ONkGDttmyWWTUTj/b4npRiMuO/17mDI6ULINfslVWkqGltXrzf0lBsSYIva9hwyHBUobq0fa/wgfc8QwMFDHF8ZORC68P685cdvx30hGqXW+Ee+elh4U2JNuoXnaLSKsY76VciSqFgyWxJ9Pg45ZYrHmt4G5PWAcZOW/iPJNPvtIXlYQpsg64dMAAAIAl3OE2MPyFbtBTWOllbV1BNcZMjiRmyIYIL6jzstYtUl2xdYbTIJ5WID39vG+8J1oO/0hgVljYvNjCYQpqGQo8467vBet+7kywlNXHwwGee6sArr3XhwFrv5BCFcfPy+Zd7QsFAIsU+RWXf1UQ9xBT9WSYFZ03YBtbKJu+Fx2702Knwtl1F5m0vsPmDYtM2QusnmrUXLVLUJfHRIcXNJW9vwl8/X5thoRSor+z6oRomolZ4ex7XgtuvPXIG9IMcJiBSUwgYZIVYYwSOhYA6OnlOG3FsTNC7nhb8LImA5swtHSSnDIFHezoOSZw7XX/ILZfiTHGviJb0QA4XDAopRsjFxHGj7oz8r1oCtP3viBreJI81ErMHxnWtSlpvcrHy5vN3gCA0yDp6dExBrz8hmdlp5mpTh+vmWugw8RKESjHVlh5fwsPlNLrEzzJ+p5nT4kTf/xMbP36o4IpMs62Ryx1U0V7y1NYYaJz47M32VgqY9MiNPvDVBg7ujg/OB8ANSu/LHhmydmO02FDsKHlemnbKgv7ja6MfIPmVJhyhA6wDOJBDpfrHZyqhs7Y2r+4TigOx4kYy3OB0G6SVRYUkF+60+buZBMjQ8CBMYfbUr7w2HkB8BRU6OySm8+uadtmq0lp5vwnPpTXJ3c9jmZmA5DHIF6kOhy/venBh8MAWNa1XWiuHouNIuDqr8mwBl3d+4HsF9CCMXrqyEZj0XO63PjwWcsttOVzAYD+RIbSnT8/q/qM21N3/Ie8PuGGY4JyBQ9a7IR4ElfVY6U1td6nPvxUCv/4rz4QOHMDgNBZXCRlg6K9RhLSdGXdU9JDE0+2kTd5vrnoOeNMp5dQeQ6gJwByx7eZfFSLBAkLK+pIsEZd3mWjjymaucwilKLHXwUDQOmKw/FTtydZrxg3oVtzugxVc77ci+GDCkBuA0ItOqrVwE4QScow8FAEqjDGdVZYbwSyxVAAmvc8h7M+W936n0JZ/S1BVYdV0rbK17DhHjwsoVPFgYejxsIAkibnfwBb/Scz+hJqqoA7nkdbJSWTDDIk31SSUo0xa/edOTQx81o7FABsc2uedJNNusLmYzstwpidXTfd1jxpmDl+CgDX9vfkZ6BoDDD+IDD+V+m18eyP6vTJNllqvo9qbl9K0ShB8HCU5sLTHzjmwmgjmOZ8238cbsAPOPWFcgFgey82iV9vNgDsAcpPyyNxEXUAYfxDQuhzALAaAIqh/xo4dwNAFsSJlvoFCJ3R94YWKKrW3dTSIUY3TMHZPwISD2rxn0mcGqfnA/EfgoQLFAC4UE1owQACcOERY+xnskRWFJMxZvnVFI+2/HsQY6y75dJF4pqu3WL91l1i+IiRPr+z+n9LtQCwKcCY0d20+27x+Hdfl9w4bRZqwashazYAQAJcILQdAA6cZ00hANT1xITQk+6ERCuvqLgbubisSj/4yNNBAFZd12UHriH7y/DV53qmv1cxIPQAADx9jutXxzz+HsFllaODAp+PKaXnfR4h9CP//xr8c4ky9s6wkkqBHr0nzsopsGbO6eg1AKqqWdX1k3t83pRZlwmny+31p8iRidkn/tH4wBAh5Ahj3HAnerw9MWPMl5DkCZrA+ZgQamsOl9nT81wJiV4AeSRmQsR2PABwPJ6JTyzCAwiLQp1cDMb/3Nh7njWh/IC/COvpOrbnxsTczSAN0iAN0iBBr+lv5v5RrYOkGT0AAAAASUVORK5CYII=" alt="network_icon"
+                        class="rounded-full border bg-red-300 mx-auto w-20">
+                </div>
+                <div class="font-semibold mx-auto">
+                    Network
+                </div>
+                <div class="text-sm text-center mt-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem maiores dolore quidem
+                    consectetur
+                    possimus, blanditiis soluta ducimus est reprehenderit labore odio similique repudiandae? Velit,
+                    quaerat!
+                    Voluptatem expedita autem facilis ipsam!
+                </div>
+            </div>
+            <div class="h-max border shadow-md p-4 mx-6 rounded-md">
+                <div class="p-6">
+                    <img src="/assets/storage_icon-bfd37b96.png" alt="storage_icon"
+                        class="rounded-full border bg-yellow-300 mx-auto w-20">
+                </div>
+                <div class="font-semibold mx-auto">
+                    Storage
+                </div>
+                <div class="text-sm text-center mt-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem maiores dolore quidem
+                    consectetur
+                    possimus, blanditiis soluta ducimus est reprehenderit labore odio similique repudiandae? Velit,
+                    quaerat!
+                    Voluptatem expedita autem facilis ipsam!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative  hidden lg:block">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 15" class="absolute -top-96 opacity-70">
+            <path d="M 0 0 C 6 5 5 13 0 13" fill="#d7e4ff" />
+        </svg>
+    </div>
+    <div class="relative block lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 15" class="absolute -top-[800px] opacity-30">
+            <path d="M 0 0 C 6 5 5 13 0 13" fill="#d7e4ff" />
+        </svg>
+    </div>
+
+    <div class="text-center mt-36">
+        <div>
+            <div class="font-bold text-3xl lg:text-4xl">
+                Check Out What's New
+            </div>
+        </div>
+        <div class="font-medium text-base mx-4 lg:w-1/2 lg:mx-auto mt-8">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, velit! Tempora voluptatibus nemo,
+            quidem
+            repudiandae ab soluta qui ipsam suscipit accusamus mollitia, incidunt ut molestiae laudantium quasi enim
+            velit
+            error.
+        </div>
+        <div class="mt-16 lg:mt-10">
+            <img src="/assets/infrastructure-7549c91f.png" alt="infrastructure" class="mx-auto">
+        </div>
+    </div>
+
+    <div class="relative  hidden lg:block">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 0 40 10" class="absolute -top-96 opacity-70">
+            <path d="M 0 0 C -2 3 -2 7 0 8" fill="#d7e4ff" />
+        </svg>
+    </div>
+    <div class="relative block lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 0 10 10" class="absolute -top-[750px] opacity-40">
+            <path d="M 0 0 C -2 3 -2 7 0 8" fill="#d7e4ff" />
+        </svg>
+    </div>
+    
+
+    <div class="relative">
+        <div class="bottom-0 left-0 absolute w-full">
+            <div class="text-center text-white">
+                <div class="text-2xl lg:text-4xl font-bold mx-auto">Step Inside And See</div>
+                <div class="text-2xl lg:text-4xl font-bold mx-auto mt-4">What The Future Looks Like</div>
+                <div class="text-base font-light mt-6">Lorem ipsum dolor sit amet.</div>
+                <div class="mt-8">
+                    <button
+                        class="text-white btn bg-blue-500 p-2 mx-auto mb-10 flex align-middle justify-center h-auto hover:text-gray-800">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEy0lEQVR4nO2ZbUwbZQDHL45M5vygycRkL0YFlWw9oHdFYSsr69uItBksIYwOwiC8KKwq4EAY8TYYsoG8CIOFCduCzmiTQbveNSC4q7p9chlkEo0fTIxrC2uPFzcXoC885sggdYP2bj1ajP0n/y9N7+nvd9fnuadXCAommGB8DsBEIdMVaB5VjBDWTPTOuFIwNy4TuCx7Y4FFGAss+wQLEwp09q4KNdsK+QNUKT8XYFAIFOj8VQ7HUQXIDUsS6jTHxwI2tcgFTlsecmO6KjrG/+DVgjeoPPS2JUHACnpFEWEssB1BRmeOo+F+gZ/6EGk2SwQLvoI/JiIWuGY+QE6vGThoittky0F+4Rrc/EhtOcgIwNI2cgo/0wk/b1UhE2sNb37YaTW/lTN4cFEUak1Hrf6CpwoQEuIyVD7ys9/g8zmGny5B2lhNRDnqpPKRm1Ml/OqpkzGiexi65X5ZVJjtGCyhSmMwKhcZpZfPVc68kVP4mVo03CITuJiCT5UgXUwmnxlDn7Ed5V9yF6G4hqczqUZ+YgJvPYyY7tfxXmQ7Pr3uWzOQ8TWBB9/v2jE/DM9PlfGBebfHJe8W0EAboPUWBwmfdhhhQPfvc9FgXPL4HdeaiZrWJTzQpG2wG3mmJQG6c7ooYFWhbt95gZMqid4GrcfYjbx4d/jlXoPBvbqYxb3LpBrphtZr7Ea4akWBh31wIXoCqJOehtZr7CR8xZOAwwi3sRnvhXwj4KrJVT1/eP1Ah5E35lGAjEoKlMBbpd/Mev1AOwlPehKYJXdGBErgtWLCxURg3pMAIHc+GyiBbYXD4H8hMOlJYO6HqNcDJRBRRCz8xyexhtEk7vOyjLYHSuDt4z0mBgK8ytXg717jg1pc9qBJk7YJ4jiNvWWbee/pnJ4E3q1v0DMQgONWgh8ZfhNk6RRA0Z8CWgziC1wLqM/Ud3u7AjXtFSqvAwEAPWU38u4sgduNMOgfEIIU7YFFeLqHdQpnx0DCDq7g61sqXo4s1rs8wUcexZ0YiTF7mucwwvU0/AwZDWpw+TK4eyuuyi0kKfL58SBGYiHJlT0Wb2c/p7b1OuNBAQlv/21YYM/TJa8Iv9QTuGzUFwmMxELSsY4xb/BbC78DNZ99hLIavA6XjnqCX74Serml+9vdW9nCdw3teSm/sfZ3JqtP2sedY2zHh3SDCa9kahUuJhKZOoWzjUjswS5mh3obt3dQtrkFl3yu0ipcqX2p4OCpVo/w4UWGBexTjNXNczkdhLhZyUDAXaROLx05axBjXxEJ4iuD8WGXSdGWHsMeYbshseYELr9Jv8f9GGVfKshqxkBYAbmiQMGpxk7Il9QTkhGmAr40u+t9sP2doX/Bp1Sf/xXyNRpN2sZjuv3jfpHozQWRav0i/L7yL6gi7CyrjeOqIUnRc5V6ucUfEoe+VoGMmlYT1omFcQLvJhF6EpfdZjMnnqS1hHTEYFjD39xdhr0Nh7RKRqsTm2Zola5zRGID5I/06kQRdbj01kG37cWTNrX/wOJZvzwkfBXydy4NCtEzuPTHHG2yg/WE1Skcn+DS61/iMv//yfdoNADacB4XH2nCxfpKXPZngTZ5NkurcNFXiN4EpmuVC/Rr5Vf3mxoICdFlSMymj4GCCSYYyNf8A50RcaYC8geEAAAAAElFTkSuQmCC" alt="google_icon" class="w-8">
+                        <span class="ps-2">Sign In With Google</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -5 13 4" class="mx-auto hidden lg:block">
+            <path d="M 0 0 C 1 -4 10 -7 11 0" fill="#3784fc" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="5 -5 4 4" class="mx-auto block lg:hidden">
+            <path d="M 0 0 C 1 -4 10 -7 11 0" fill="#3784fc" />
+        </svg>
+    </div>
+
+
+</body>
+
+</html>
