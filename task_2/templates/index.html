@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% block title %}
+    Home
+{% endblock %}
+{% block body %}
+<div class="container px-0" style="margin-bottom: 100px; display: none;" id="list-view">
+    <table class="table my-4 bg-light bg-gradient bg-opacity-75 text-center">
+        <tbody class="mx-auto">
+            {% if allTodo|length == 0 %}
+                <div class="bg-danger bg-opacity-50 mt-5 py-5 rounded text-center text-light fs-3" role="alert">No Todos found. Add Your first Todo now</div>
+            {% else %}
+                <thead>
+                    <tr>
+                        <th scope="col">SNo</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Time</th>
+    
+                    </tr>
+                </thead>
+                {% for todo in allTodo %}
+                    <tr>
+                        <th scope="row">{{ loop.index }}</th>
+                        <td>{{ todo.title }}</td>
+                        <td>{{ todo.desc }}</td>
+                        <td>{{ todo.date_created }}</td>
+                        <td>
+                            <a href="/update/{{ todo.sno }}" type="button" class="btn btn-dark btn-sm mx-1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Update">↻</a>
+                            <a href="/delete/{{ todo.sno }}" type="button" class="btn btn-danger btn-sm mx-1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Delete">✕</a>
+                        </td>
+                    </tr>
+                {% endfor %}         
+            {% endif %}
+        </tbody>
+    </table>
+</div>
+
+<div class="container px-0" style="margin-bottom: 100px;" style="display: block;" id="grid-view">
+    {% if allTodo|length == 0 %}
+        <div class="bg-danger bg-opacity-50 mt-5 py-5 rounded text-center text-light fs-3" role="alert">No Todos found. Add Your first Todo now</div>
+    {% else %}
+        <div class="row justify-content-evenly">
+            {% for todo in allTodo %}
+            <div class="px-2 col-12 col-md-6 col-lg-4">
+                <div class="bg-light mx-2 rounded rounded-md my-2 p-4 bg-opacity-75">
+                    <div class="text-center fs-4">
+                        {{ todo.title }}
+                    </div>
+                    <div class="text-center fw-lighter mt-2">
+                        {{ todo.desc }}
+                    </div>
+                    <div class="text-center mt-2">
+                        {{ todo.date_created }}
+                    </div>
+                    <div class="mt-2 d-flex justify-content-center">
+                        <a href="/update/{{ todo.sno }}" type="button" class="btn btn-dark btn-sm mx-1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Update">↻</a>
+                        <a href="/delete/{{ todo.sno }}" type="button" class="btn btn-danger btn-sm mx-1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Delete">✕</a>
+                    </div>
+                </div>
+            </div>            
+            {% endfor %}        
+        </div>
+    {% endif %}
+    
+    
+</div>
+{% endblock %}
+
+{% block todoAddModal %}
+<div class="fixed-bottom d-flex justify-content-between w-100 p-2">
+    <button type="button" id="display-switch" class="btn bg-light bg-opacity-50 rounded rounded-circle p-3 fs-1" style="width: auto;" data-bs-toggle="tooltip" data-bs-target="#switchDisplay" data-bs-placement="top" data-bs-title="List View">
+        <img src="/static/images/list.png" alt="display-type" id="display-image">
+    </button>
+    <button type="button" class="btn btn-danger rounded rounded-pill p-3 fs-1" style="width: 70px;" data-bs-toggle="modal" data-bs-target="#todoAddModal">
+        +
+    </button>
+</div>
+
+<div class="modal fade" id="todoAddModal" tabindex="-1" aria-labelledby="todoAddModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="todoAddModalLabel">Add a Todo</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="/" method="POST">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" class="form-control " name="title" id="title" aria-describedby="title" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="desc" class="form-label">Description</label>
+                        <input type="text" class="form-control" name="desc" id="desc">
+                    </div>
+                    <div class="mb-3 d-flex">
+                        <div class="me-2">
+                            <label for="date" class="form-label">Date</label>
+                            <input type="date" class="form-control" name="date" id="date">
+                        </div>
+                        <div class="ms-2">
+                            <label for="time" class="form-label">Time</label>
+                            <input type="time" class="form-control" name="time" id="time">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-danger">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

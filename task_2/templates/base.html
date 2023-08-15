@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}
+
+        {% endblock %} - My Todo</title>
+    <link rel="stylesheet" href="/static/styles/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles/styles.css">
+</head>
+
+<body style="min-height: 100vh;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex" href="/">
+                <img src="/static/images/logo.png" alt="logo" width="100px" height="100px">
+                <span class="navbar-brand h1 text-light pt-5">TaSc</span>
+            </a>
+            
+            {% block todoAddModal %}
+            
+            {% endblock %}
+            </div>
+        </div>
+    </nav>
+    {% block body %}
+
+    {% endblock %}
+    <script src="/static/scripts/bootstrap.bundle.min.js"></script>
+    <script src="/static/scripts/script.js"></script>
+    </body>
+
+</html

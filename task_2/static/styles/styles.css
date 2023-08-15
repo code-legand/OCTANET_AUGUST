@@ -1,0 +1,17 @@
+body{
+    /* background: url(https://source.unsplash.com/1600x1200/?nature);  */
+    background: url(../images/background.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: left;
+    font-family: 'Lato', serif;
+    
+}
+
+.navbar-brand{
+    font-family: 'DM Serif Display', serif; 
+    font-size: 50px; margin-left: -29px; background: #F85032;
+    background: linear-gradient(to right, #Fa5032 0%, #F45F5C 50%, #F6290C 51%, #F02F17 71%, #E73827 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
