@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class=""
+        style="background-image: url(images/bg-hero.png); background-repeat: no-repeat; background-position: top; background-size: cover;">
+        <header
+            class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-4 dark:bg-gray-800 bg-blue-600 bg-opacity-80 sticky top-0">
+            <nav class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+                aria-label="Global">
+                <div class="flex items-center justify-between">
+                    <a class="inline-flex items-center gap-x-2 text-xl font-semibold dark:text-white" href="#">
+                        <!-- <svg class="w-10 h-auto" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="100" height="100" rx="10" fill="black"/>
+              <path d="M37.656 68V31.6364H51.5764C54.2043 31.6364 56.3882 32.0507 58.1283 32.8793C59.8802 33.696 61.1882 34.8146 62.0523 36.2351C62.9282 37.6555 63.3662 39.2654 63.3662 41.0646C63.3662 42.5443 63.0821 43.8108 62.5139 44.8643C61.9458 45.906 61.1823 46.7524 60.2235 47.4034C59.2646 48.0544 58.1934 48.522 57.0097 48.8061V49.1612C58.2999 49.2322 59.5369 49.6288 60.7206 50.3509C61.9162 51.0611 62.8927 52.0672 63.6503 53.3693C64.4079 54.6714 64.7867 56.2457 64.7867 58.0923C64.7867 59.9744 64.3309 61.6671 63.4195 63.1705C62.508 64.6619 61.1349 65.8397 59.3002 66.7038C57.4654 67.5679 55.1572 68 52.3754 68H37.656ZM44.2433 62.4957H51.3279C53.719 62.4957 55.4413 62.04 56.4948 61.1286C57.5601 60.2053 58.0928 59.0215 58.0928 57.5774C58.0928 56.5002 57.8264 55.5296 57.2938 54.6655C56.7611 53.7895 56.0035 53.103 55.021 52.6058C54.0386 52.0968 52.8667 51.8423 51.5054 51.8423H44.2433V62.4957ZM44.2433 47.1016H50.7597C51.896 47.1016 52.92 46.8944 53.8314 46.4801C54.7429 46.054 55.459 45.4562 55.9798 44.6868C56.5125 43.9055 56.7789 42.9822 56.7789 41.9169C56.7789 40.5083 56.2817 39.3482 55.2874 38.4368C54.3049 37.5253 52.843 37.0696 50.9017 37.0696H44.2433V47.1016Z" fill="white"/>
+            </svg> -->
+                        <img src="images/favicon.png" alt="logo">
+                        <span class="text-white font-semibold ms-2 text-2xl tracking-wider">Telemo</span>
+                    </a>
+                    <div class="sm:hidden">
+                        <button type="button"
+                            class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md active:border font-medium bg-blue-600 bg-opacity-80 text-blue-200 hover:text-gray-500 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800 w-10"
+                            data-hs-collapse="#navbar-image-and-text-1" aria-controls="navbar-image-and-text-1"
+                            aria-label="Toggle navigation">
+                            <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                            <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16"
+                                fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div id="navbar-image-and-text-1"
+                    class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+                    <div
+                        class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5 text-white">
+                        <a class="font-medium text-white" href="#" aria-current="page">Home</a>
+                        <a class="font-medium text-slate-300 hover:text-slate-200 dark:text-slate-300 dark:hover:text-slate-200"
+                            href="#">About</a>
+                        <a class="font-medium text-slate-300 hover:text-slate-200 dark:text-slate-300 dark:hover:text-slate-200"
+                            href="#">Product</a>
+                        <a class="font-medium text-slate-300 hover:text-slate-200 dark:text-slate-300 dark:hover:text-slate-200"
+                            href="#">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="bg-blue-500 bg-opacity-50">
+            <div class="w-full lg:w-2/3">
+                <div class="px-5 text-3xl font-medium pt-36 text-left">
+                    We are a unique Artificial Intelligence and Generative AI company that specializes in communications
+                    product development to enhance enterprise customer experience.
+                </div>
+                <div class="pt-32 px-4 text-right font-medium text-lg text-black">
+                    Our key offerings include an AI-powered customer experience platform with AI Chatbots, CPaaS, CCaaS,
+                    voicebot, Natural Language Processing (NLP), Speech Recognition, Sentiment Analysis, Predictive
+                    Analytics, Generative AI, Robotic Process Automation, Voice Analytics, Virtual Assistants, and
+                    Omnichannel Integration.
+                </div>
+                <div class="text-center py-10">
+                    <button type="button"
+                        class="py-3 px-4 me-2 inline-flex justify-center items-center gap-2 rounded-full border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
+                        Read More
+                    </button>
+                    <button type="button"
+                        class="py-3 px-4 ms-2 inline-flex justify-center items-center gap-2 rounded-full border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/3 pb-4 pt-12">
+                <img src="images/hero-img.png" alt="hero-img">
+            </div>
+        </div>
+    </div>
+    <div class="lg:flex mt-32 px-4">
+        <div class="w-full lg:w-1/2 relative">
+            <img src="images/about-img.jpg" alt="robot-image">
+            <img src="images/bg-about-img.png" alt="image-frame" class="absolute top-0 left-0">
+        </div>
+        <div class="w-full lg:w-1/2">
+            <div class="font-semibold text-3xl mt-20">
+                We enhance your customer experience with Artificial Intelligence.
+            </div>
+            <div class="mt-4">
+                <p>
+                    With our advanced AI agents and chatbots, you can offer round-the-clock support to your customers, resolving their queries and issues promptly and efficiently. This not only enhances customer satisfaction but also allows your valuable human resources to focus on more strategic tasks that contribute to your business's success.
+                </p>
+                <p class="mt-3">
+                    Whether you are a small startup or a large telecom operator, we are here to support you on your journey to embrace the future of intelligent automation. Let us partner with you to unlock the full potential of AI for your contact center and fuel your business's success.
+                </p>
+            </div>
+            <div class="mt-4">
+                <p class="flex">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="35px" height="35px" fill-rule="nonzero" fill="none"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M44,24c0,11.045 -8.955,20 -20,20c-11.045,0 -20,-8.955 -20,-20c0,-11.045 8.955,-20 20,-20c11.045,0 20,8.955 20,20z" fill-opacity="0.8" fill="#ffffff"></path><path d="M34.586,14.586l-13.57,13.586l-5.602,-5.586l-2.828,2.828l8.434,8.414l16.395,-16.414z" fill="#339af0"></path></g></g></svg></span>
+                    <span class="mt-1">Award winning product</span>
+                </p>
+                <p class="flex">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="35px" height="35px" fill-rule="nonzero" fill="none"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M44,24c0,11.045 -8.955,20 -20,20c-11.045,0 -20,-8.955 -20,-20c0,-11.045 8.955,-20 20,-20c11.045,0 20,8.955 20,20z" fill-opacity="0.8" fill="#ffffff"></path><path d="M34.586,14.586l-13.57,13.586l-5.602,-5.586l-2.828,2.828l8.434,8.414l16.395,-16.414z" fill="#339af0"></path></g></g></svg></span>
+                    <span class="mt-1">24/7 Support</span>
+                </p>
+            </div>
+            <div class="mt-8">
+                <button type="button"
+                    class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-full border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800 ">
+                    Read More
+                </button>
+                <div class="mb-16">
+                    <!-- Icon Blocks -->
+                    <div class="max-w-[85rem] py-10 sm:px-6 lg:px-8 lg:py-14 flex justify-between">
+                        <div>
+                            <div
+                                class="relative flex justify-center items-center w-12 h-12 bg-blue-50 rounded-xl before:absolute before:-inset-px before:-z-[1] before:bg-gradient-to-br before:from-blue-600 before:via-transparent before:to-violet-600 before:rounded-xl dark:bg-slate-900">
+                                <img src="images/facebook.png" alt="facebook">
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="relative flex justify-center items-center w-12 h-12 bg-blue-50 rounded-xl before:absolute before:-inset-px before:-z-[1] before:bg-gradient-to-br before:from-blue-600 before:via-transparent before:to-violet-600 before:rounded-xl dark:bg-slate-900">
+                                <img src="images/twitter.png" alt="facebook">
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="relative flex justify-center items-center w-12 h-12 bg-blue-50 rounded-xl before:absolute before:-inset-px before:-z-[1] before:bg-gradient-to-br before:from-blue-600 before:via-transparent before:to-violet-600 before:rounded-xl dark:bg-slate-900">
+                                <img src="images/instagram.png" alt="facebook">
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="relative flex justify-center items-center w-12 h-12 bg-blue-50 rounded-xl before:absolute before:-inset-px before:-z-[1] before:bg-gradient-to-br before:from-blue-600 before:via-transparent before:to-violet-600 before:rounded-xl dark:bg-slate-900">
+                                <img src="images/linkedin.png" alt="facebook">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Icon Blocks -->
+            </div>
+        </div>
+    </div>
+    <div class="bg-blue-200 px-4">
+        <div>
+            <div class="py-4">
+                <button type="button"
+                    class="mt-20 px-4 inline-flex justify-center items-center gap-2 border-2 border-gray-400 font-semibold text-blue-500 hover:text-white hover:bg-blue-500 hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-blue-500 rounded-full">
+                    Outline
+                </button>
+            </div>
+            <div class="font-semibold text-3xl mt-1">
+                Generative AI for Your Business
+            </div>
+            <div class="mt-4">
+                Generative AI is a game-changer in the contact center industry, enabling businesses to create dynamic
+                content, simulate human-like conversations, and provide innovative solutions to customer inquiries. Our
+                Generative AI solutions are designed to enhance customer interactions, improve response accuracy, and
+                streamline contact center processes.
+            </div>
+            <div class="mt-8">
+                <button type="button"
+                    class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-full border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">
+                    Read More
+                </button>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 mt-6 pb-12">
+            <div
+                class="flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7] mt-6">
+                <img class="w-full h-auto rounded-t-xl" src="../docs/assets/img/500x300/img1.jpg"
+                    alt="Image Description">
+                <div class="p-4 md:p-5">
+                    <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+                        Card title
+                    </h3>
+                    <p class="mt-1 text-gray-800 dark:text-gray-400">
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                </div>
+                <button type="button"
+                    class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md bg-blue-100 border border-transparent font-semibold text-blue-500 hover:text-white hover:bg-blue-500 focus:outline-none focus:ring-2 ring-offset-white focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm">
+                    Soft
+                </button>
+            </div>
+            <div
+                class="flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7] mt-6">
+                <img class="w-full h-auto rounded-t-xl" src="../docs/assets/img/500x300/img1.jpg"
+                    alt="Image Description">
+                <div class="p-4 md:p-5">
+                    <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+                        Card title
+                    </h3>
+                    <p class="mt-1 text-gray-800 dark:text-gray-400">
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                </div>
+                <button type="button"
+                    class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md bg-blue-100 border border-transparent font-semibold text-blue-500 hover:text-white hover:bg-blue-500 focus:outline-none focus:ring-2 ring-offset-white focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm">
+                    Soft
+                </button>
+            </div>
+            <div
+                class="flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7] mt-6">
+                <img class="w-full h-auto rounded-t-xl" src="../docs/assets/img/500x300/img1.jpg"
+                    alt="Image Description">
+                <div class="p-4 md:p-5">
+                    <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+                        Card title
+                    </h3>
+                    <p class="mt-1 text-gray-800 dark:text-gray-400">
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                </div>
+                <button type="button"
+                    class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md bg-blue-100 border border-transparent font-semibold text-blue-500 hover:text-white hover:bg-blue-500 focus:outline-none focus:ring-2 ring-offset-white focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm">
+                    Soft
+                </button>
+            </div>
+            <div
+                class="flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7] mt-6">
+                <img class="w-full h-auto rounded-t-xl" src="../docs/assets/img/500x300/img1.jpg"
+                    alt="Image Description">
+                <div class="p-4 md:p-5">
+                    <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+                        Card title
+                    </h3>
+                    <p class="mt-1 text-gray-800 dark:text-gray-400">
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                </div>
+                <button type="button"
+                    class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md bg-blue-100 border border-transparent font-semibold text-blue-500 hover:text-white hover:bg-blue-500 focus:outline-none focus:ring-2 ring-offset-white focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm">
+                    Soft
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-blue-500 bg-opacity-50"
+        style="background-image: url(images/bg-hero.png); background-repeat: no-repeat; background-position: top; background-size: cover;">
+        <div class="w-full lg:w-1/2">
+            <button type="button"
+                class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md bg-blue-100 border border-transparent font-semibold text-blue-500 hover:text-white hover:bg-blue-100 focus:outline-none focus:ring-2 ring-offset-white focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">
+                Button
+            </button>
+
+            <div class="px-5 text-3xl font-medium pt-36 text-left">
+                We're Best in AI Industry with Years of Experience
+            </div>
+            <div class="pt-32 px-4 text-right font-medium text-lg text-black">
+                From AI Chatbots and Virtual Assistants to Natural Language Processing (NLP) and Sentiment Analysis, our
+                cutting-edge AI technologies are designed to understand and cater to your customers' needs like never
+                before.
+            </div>
+            <div>
+                <div class="flex">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0,0,256,256" width="35px" height="35px" fill-rule="nonzero" fill="none">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <g transform="scale(5.33333,5.33333)">
+                                    <path
+                                        d="M44,24c0,11.045 -8.955,20 -20,20c-11.045,0 -20,-8.955 -20,-20c0,-11.045 8.955,-20 20,-20c11.045,0 20,8.955 20,20z"
+                                        fill-opacity="0.8" fill="#ffffff"></path>
+                                    <path
+                                        d="M34.586,14.586l-13.57,13.586l-5.602,-5.586l-2.828,2.828l8.434,8.414l16.395,-16.414z"
+                                        fill="#339af0"></path>
+                                </g>
+                            </g>
+                        </svg></span>
+                    <Span class="pt-1.5 px-2">Generative AI</Span>
+                </div>
+                <div class="flex">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0,0,256,256" width="35px" height="35px" fill-rule="nonzero" fill="none">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <g transform="scale(5.33333,5.33333)">
+                                    <path
+                                        d="M44,24c0,11.045 -8.955,20 -20,20c-11.045,0 -20,-8.955 -20,-20c0,-11.045 8.955,-20 20,-20c11.045,0 20,8.955 20,20z"
+                                        fill-opacity="0.8" fill="#ffffff"></path>
+                                    <path
+                                        d="M34.586,14.586l-13.57,13.586l-5.602,-5.586l-2.828,2.828l8.434,8.414l16.395,-16.414z"
+                                        fill="#339af0"></path>
+                                </g>
+                            </g>
+                        </svg></span>
+                    <Span class="pt-1.5 px-2">Generative AI</Span>
+                </div>
+                <div class="flex">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0,0,256,256" width="35px" height="35px" fill-rule="nonzero" fill="none">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <g transform="scale(5.33333,5.33333)">
+                                    <path
+                                        d="M44,24c0,11.045 -8.955,20 -20,20c-11.045,0 -20,-8.955 -20,-20c0,-11.045 8.955,-20 20,-20c11.045,0 20,8.955 20,20z"
+                                        fill-opacity="0.8" fill="#ffffff"></path>
+                                    <path
+                                        d="M34.586,14.586l-13.57,13.586l-5.602,-5.586l-2.828,2.828l8.434,8.414l16.395,-16.414z"
+                                        fill="#339af0"></path>
+                                </g>
+                            </g>
+                        </svg></span>
+                    <Span class="pt-1.5 px-2">Generative AI</Span>
+                </div>
+            </div>
+            <div class="md:flex">
+                <div>
+                    <div>
+                        <span></span>
+                        <span>15</span>
+                    </div>
+                    <div>Happy telecom operators in worldwide</div>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                        <span>15</span>
+                    </div>
+                    <div>Happy telecom operators in worldwide</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full lg:w-1/2 pb-4 pt-12">
+            <img src="images/feature.png" alt="hero-img">
+        </div>
+    </div>
+    <div class="bg-blue-200">
+        <button type="button"
+            class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-blue-200 font-semibold text-blue-500 hover:text-white hover:bg-blue-500 hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">
+            Button
+        </button>
+        <div>
+            Explore Our Recent AI Case Studies
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3">
+            <div>
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+                    style="background-image: url(images/project-1.jpg); background-repeat: no-repeat; background-position: top; background-size: cover;">
+                    <button type="button"
+                        class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md bg-gray-100 border border-transparent font-semibold text-gray-500 hover:text-white hover:bg-gray-500 focus:outline-none focus:ring-2 ring-offset-white focus:ring-gray-500 focus:ring-offset-2 transition-all text-sm dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-600 dark:text-white dark:focus:ring-offset-gray-800">
+                        Button
+                    </button>
+                    <div class="p-4 md:p-5">
+                        <p class="mt-1 text-gray-800 dark:text-gray-400">
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                        <button type="button"
+                            class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-full border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">
+                            Button
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+                    style="background-image: url(images/project-2.jpg); background-repeat: no-repeat; background-position: top; background-size: cover;">
+                    <button type="button"
+                        class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md bg-gray-100 border border-transparent font-semibold text-gray-500 hover:text-white hover:bg-gray-500 focus:outline-none focus:ring-2 ring-offset-white focus:ring-gray-500 focus:ring-offset-2 transition-all text-sm dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-600 dark:text-white dark:focus:ring-offset-gray-800">
+                        Button
+                    </button>
+                    <div class="p-4 md:p-5">
+                        <p class="mt-1 text-gray-800 dark:text-gray-400">
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                        <button type="button"
+                            class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-full border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">
+                            Button
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+                    style="background-image: url(images/project-3.jpg); background-repeat: no-repeat; background-position: top; background-size: cover;">
+                    <button type="button"
+                        class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md bg-gray-100 border border-transparent font-semibold text-gray-500 hover:text-white hover:bg-gray-500 focus:outline-none focus:ring-2 ring-offset-white focus:ring-gray-500 focus:ring-offset-2 transition-all text-sm dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-600 dark:text-white dark:focus:ring-offset-gray-800">
+                        Button
+                    </button>
+                    <div class="p-4 md:p-5">
+                        <p class="mt-1 text-gray-800 dark:text-gray-400">
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                        <button type="button"
+                            class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-full border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">
+                            Button
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button type="button"
+            class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-blue-200 font-semibold text-blue-500 hover:text-white hover:bg-blue-500 hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">
+            Button
+        </button>
+        <div>
+
+        </div>
+        <div class="hs-accordion-group">
+            <div class="hs-accordion" id="hs-basic-with-arrow-heading-one">
+                <button
+                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                    aria-controls="hs-basic-with-arrow-collapse-one">
+                    <svg class="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    <svg class="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    Accordion #1
+                </button>
+                <div id="hs-basic-with-arrow-collapse-one"
+                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                    aria-labelledby="hs-basic-with-arrow-heading-one">
+                    <p class="text-gray-800 dark:text-gray-200">
+                        <em>This is the third item's accordion body.</em> It is hidden by default, until the collapse
+                        plugin adds the appropriate classes that we use to style each element. These classes control the
+                        overall appearance, as well as the showing and hiding via CSS transitions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hs-accordion" id="hs-basic-with-arrow-heading-two">
+                <button
+                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                    aria-controls="hs-basic-with-arrow-collapse-two">
+                    <svg class="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    <svg class="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    Accordion #2
+                </button>
+                <div id="hs-basic-with-arrow-collapse-two"
+                    class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                    aria-labelledby="hs-basic-with-arrow-heading-two">
+                    <p class="text-gray-800 dark:text-gray-200">
+                        <em>This is the third item's accordion body.</em> It is hidden by default, until the collapse
+                        plugin adds the appropriate classes that we use to style each element. These classes control the
+                        overall appearance, as well as the showing and hiding via CSS transitions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hs-accordion" id="hs-basic-with-arrow-heading-three">
+                <button
+                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400"
+                    aria-controls="hs-basic-with-arrow-collapse-three">
+                    <svg class="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    <svg class="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+                        width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    Accordion #3
+                </button>
+                <div id="hs-basic-with-arrow-collapse-three"
+                    class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                    aria-labelledby="hs-basic-with-arrow-heading-three">
+                    <p class="text-gray-800 dark:text-gray-200">
+                        <em>This is the third item's accordion body.</em> It is hidden by default, until the collapse
+                        plugin adds the appropriate classes that we use to style each element. These classes control the
+                        overall appearance, as well as the showing and hiding via CSS transitions.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="grid lg:grid-cols-2">
+
+        </div>
+    </div>
+    <div class="bg-blue-500 bg-opacity-50"
+        style="background-image: url(images/bg-hero.png); background-repeat: no-repeat; background-position: top; background-size: cover;">
+        <div class="w-full lg:w-1/2">
+            <div class="w-full lg:w-1/2 pb-4 pt-12">
+                <img src="images/feature.png" alt="hero-img">
+            </div>
+        </div>
+        <div class="w-full lg:w-1/2">
+            <button type="button"
+                class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-blue-200 font-semibold text-blue-500 hover:text-white hover:bg-blue-500 hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">
+                Button
+            </button>
+            <div class="px-5 text-3xl font-medium pt-36 text-left">
+                We're Best in AI Industry with Years of Experience
+            </div>
+            <div>
+                <label for="hs-trailing-button-add-on-with-icon" class="sr-only">Label</label>
+                <div class="flex rounded-full shadow-sm">
+                    <input type="text" id="hs-trailing-button-add-on-with-icon"
+                        name="hs-trailing-button-add-on-with-icon"
+                        class="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-s-full text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        placeholder="Enter your email">
+                    <button type="button"
+                        class="inline-flex flex-shrink-0 justify-center items-center h-[2.875rem] w-[2.875rem] rounded-r-full border border-transparent font-semibold text-blue-500 bg-white hover:text-blue-600 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-sm">
+                        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="pt-32 px-4 text-right font-medium text-lg text-black">
+                From AI Chatbots and Virtual Assistants to Natural Language Processing (NLP) and Sentiment Analysis, our
+                cutting-edge AI technologies are designed to understand and cater to your customers' needs like never
+                before.
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-black">
+        <!-- Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 bg-opacity-50"
+            style="background-image: url(images/footer.png); background-repeat: no-repeat; background-position: top; background-size: cover;">
+            <div class="col-span-full hidden lg:col-span-1 lg:block">
+                <a class="flex-none text-xl font-semibold dark:text-white" href="#" aria-label="Brand">Brand</a>
+                <p class="mt-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">© 2022 Preline.</p>
+            </div>
+            <!-- End Col -->
+
+            <div class="text-center mt-8 px-4">
+                <h4 class="text-xs font-semibold text-gray-300 uppercase dark:text-gray-100">About Us</h4>
+                <div class="mt-3 space-y-3 text-sm text-gray-400">
+                    We are a unique startup specializing in Artificial Intelligence and Generative AI, focused on
+                    communications product development to enhance the enterprise customer experience. By integrating AI
+                    agents and chatbots, we empower businesses to offer round-the-clock customer support, promptly
+                    addressing queries and efficiently resolving issues. This not only boosts customer satisfaction but
+                    also allows valuable human resources to focus on more complex tasks.
+                </div>
+            </div>
+            <!-- End Col -->
+
+            <div class="text-center mt-8 px-4">
+                <h4 class="text-xs font-semibold text-gray-300 uppercase dark:text-gray-100">Get In Touch</h4>
+
+                <div class="mt-3 grid space-y-3 text-sm">
+                    <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-300 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">
+                            F-23, F-Block, Sector 11, Noida, Uttar Pradesh 201301 India
+                        </a></p>
+                    <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-300 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">
+                            +91-120-433-3335
+                        </a></p>
+                    <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-300 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">
+                            info@startelelogic.com
+                        </a></p>
+                    <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-300 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">
+                            <span
+                                class="inline-flex justify-center items-center w-[46px] h-[46px] rounded-full border border-gray-500 text-gray-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0,0,256,256" width="32px" height="32px" fill-rule="nonzero" fill="#a9a9a9">
+                                    <g fill="#a9a9a9" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(5.12,5.12)">
+                                            <path
+                                                d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <span
+                                class="inline-flex justify-center items-center w-[46px] h-[46px] rounded-full border border-gray-500 text-gray-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0,0,256,256" width="32px" height="32px" fill-rule="nonzero" fill="#a9a9a9">
+                                    <g fill="#a9a9a9" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(5.12,5.12)">
+                                            <path
+                                                d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <span
+                                class="inline-flex justify-center items-center w-[46px] h-[46px] rounded-full border border-gray-500 text-gray-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0,0,256,256" width="32px" height="32px" fill-rule="nonzero" fill="#a9a9a9">
+                                    <g fill="#a9a9a9" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(5.12,5.12)">
+                                            <path
+                                                d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM17,20v19h-6v-19zM11,14.47c0,-1.4 1.2,-2.47 3,-2.47c1.8,0 2.93,1.07 3,2.47c0,1.4 -1.12,2.53 -3,2.53c-1.8,0 -3,-1.13 -3,-2.53zM39,39h-6c0,0 0,-9.26 0,-10c0,-2 -1,-4 -3.5,-4.04h-0.08c-2.42,0 -3.42,2.06 -3.42,4.04c0,0.91 0,10 0,10h-6v-19h6v2.56c0,0 1.93,-2.56 5.81,-2.56c3.97,0 7.19,2.73 7.19,8.26z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <span
+                                class="inline-flex justify-center items-center w-[46px] h-[46px] rounded-full border border-gray-500 text-gray-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0,0,256,256" width="32px" height="32px" fill-rule="nonzero" fill="#a9a9a9">
+                                    <g fill="#a9a9a9" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(5.12,5.12)">
+                                            <path
+                                                d="M25,2c12.703,0 23,10.297 23,23c0,12.703 -10.297,23 -23,23c-12.703,0 -23,-10.297 -23,-23c0,-12.703 10.297,-23 23,-23zM32.934,34.375c0.423,-1.298 2.405,-14.234 2.65,-16.783c0.074,-0.772 -0.17,-1.285 -0.648,-1.514c-0.578,-0.278 -1.434,-0.139 -2.427,0.219c-1.362,0.491 -18.774,7.884 -19.78,8.312c-0.954,0.405 -1.856,0.847 -1.856,1.487c0,0.45 0.267,0.703 1.003,0.966c0.766,0.273 2.695,0.858 3.834,1.172c1.097,0.303 2.346,0.04 3.046,-0.395c0.742,-0.461 9.305,-6.191 9.92,-6.693c0.614,-0.502 1.104,0.141 0.602,0.644c-0.502,0.502 -6.38,6.207 -7.155,6.997c-0.941,0.959 -0.273,1.953 0.358,2.351c0.721,0.454 5.906,3.932 6.687,4.49c0.781,0.558 1.573,0.811 2.298,0.811c0.725,0 1.107,-0.955 1.468,-2.064z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <span
+                                class="inline-flex justify-center items-center w-[46px] h-[46px] rounded-full border border-gray-500 text-gray-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0,0,256,256" width="32px" height="32px" fill-rule="nonzero" fill="#a9a9a9">
+                                    <g fill="#a9a9a9" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(5.12,5.12)">
+                                            <path
+                                                d="M50.0625,10.4375c-1.84766,0.82031 -3.82812,1.37109 -5.91016,1.62109c2.125,-1.27344 3.75781,-3.28906 4.52344,-5.6875c-1.98437,1.17578 -4.19141,2.03125 -6.53125,2.49219c-1.875,-2 -4.54687,-3.24609 -7.50391,-3.24609c-5.67969,0 -10.28516,4.60156 -10.28516,10.28125c0,0.80469 0.09375,1.58984 0.26953,2.34375c-8.54687,-0.42969 -16.12109,-4.52344 -21.19531,-10.74609c-0.88672,1.52344 -1.39062,3.28906 -1.39062,5.17187c0,3.56641 1.8125,6.71484 4.57422,8.5625c-1.6875,-0.05469 -3.27344,-0.51953 -4.66016,-1.28906c0,0.04297 0,0.08594 0,0.12891c0,4.98438 3.54688,9.13672 8.24609,10.08594c-0.85937,0.23438 -1.76953,0.35938 -2.70703,0.35938c-0.66406,0 -1.30859,-0.0625 -1.9375,-0.1875c1.3125,4.08203 5.10938,7.0625 9.60547,7.14453c-3.51562,2.75781 -7.94922,4.39844 -12.76953,4.39844c-0.83203,0 -1.64844,-0.04687 -2.44922,-0.14453c4.54687,2.92188 9.95312,4.62109 15.76172,4.62109c18.91406,0 29.25781,-15.66797 29.25781,-29.25391c0,-0.44531 -0.01172,-0.89453 -0.02734,-1.33203c2.00781,-1.44922 3.75,-3.26172 5.12891,-5.32422z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                        </a></p>
+                </div>
+            </div>
+            <!-- End Col -->
+
+            <div class="text-center mt-8 px-4">
+                <h4 class="text-xs font-semibold text-gray-300 uppercase dark:text-gray-100">Popular Links</h4>
+
+                <div class="mt-3 grid space-y-3 text-sm">
+                    <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-300 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">
+                            About Us
+                        </a></p>
+                    <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-300 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">
+                            Contact Us
+                        </a></p>
+                    <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-300 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">
+                            Privacy Policy
+                        </a></p>
+                    <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-300 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">
+                            Terms & Conditions
+                        </a></p>
+                </div>
+            </div>
+
+            <div class="text-center mt-8 px-4">
+                <h4 class="text-xs font-semibold text-gray-300 uppercase dark:text-gray-100">Products</h4>
+
+                <div class="mt-3 grid space-y-3 text-sm">
+                    <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-300 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">
+                            AI Chatbots
+                        </a></p>
+                    <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-300 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">
+                            CX Platform
+                        </a></p>
+                    <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-300 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">
+                            Voicebots
+                        </a></p>
+                    <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-300 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">
+                            Generative AI
+                        </a></p>
+                    <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-300 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">
+                            AI-First Agent
+                        </a></p>
+                    <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-300 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">
+                            CPaaS
+                        </a></p>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Grid -->
+
+        <div class="pt-5 mt-5 border-t border-gray-200 dark:border-gray-700">
+            <div class="sm:flex sm:justify-between sm:items-center">
+                <div class="flex items-center gap-x-3">
+                    <!-- Language Dropdown -->
+                    <div class="hs-dropdown relative inline-flex [--placement:top-left]">
+                        <button id="footer-language-dropdown" type="button"
+                            class="hs-dropdown-toggle py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border bg-white text-gray-700 align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
+                            <svg class="w-3 h-3 rounded-full" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us"
+                                viewBox="0 0 512 512">
+                                <g fill-rule="evenodd">
+                                    <g stroke-width="1pt">
+                                        <path fill="#bd3d44"
+                                            d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                                            transform="scale(3.9385)" />
+                                        <path fill="#fff"
+                                            d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                                            transform="scale(3.9385)" />
+                                    </g>
+                                    <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)" />
+                                    <path fill="#fff"
+                                        d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
+                                        transform="scale(3.9385)" />
+                                </g>
+                            </svg>
+                            English (US)
+                            <svg class="hs-dropdown-open:rotate-180 w-2.5 h-2.5 text-gray-600" width="16" height="16"
+                                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </button>
+
+                        <div class="hs-dropdown-menu w-40 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden z-10 bg-white shadow-md rounded-lg p-2 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700"
+                            aria-labelledby="footer-language-dropdown">
+                            <a class="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                                href="#">
+                                <svg class="w-3.5 h-3.5 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                    id="flag-icon-css-us" viewBox="0 0 512 512">
+                                    <g fill-rule="evenodd">
+                                        <g stroke-width="1pt">
+                                            <path fill="#bd3d44"
+                                                d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                                                transform="scale(3.9385)" />
+                                            <path fill="#fff"
+                                                d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                                                transform="scale(3.9385)" />
+                                        </g>
+                                        <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)" />
+                                        <path fill="#fff"
+                                            d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
+                                            transform="scale(3.9385)" />
+                                    </g>
+                                </svg>
+                                English (US)
+                            </a>
+                            <a class="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                                href="#">
+                                <svg class="w-3 h-3 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                    id="flag-icon-css-de" viewBox="0 0 512 512">
+                                    <path fill="#ffce00" d="M0 341.3h512V512H0z" />
+                                    <path d="M0 0h512v170.7H0z" />
+                                    <path fill="#d00" d="M0 170.7h512v170.6H0z" />
+                                </svg>
+                                Deutsch
+                            </a>
+                            <a class="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                                href="#">
+                                <svg class="w-3 h-3 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                    id="flag-icon-css-dk" viewBox="0 0 512 512">
+                                    <path fill="#c8102e" d="M0 0h512.1v512H0z" />
+                                    <path fill="#fff" d="M144 0h73.1v512H144z" />
+                                    <path fill="#fff" d="M0 219.4h512.1v73.2H0z" />
+                                </svg>
+                                Dansk
+                            </a>
+                            <a class="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                                href="#">
+                                <svg class="w-3 h-3 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                    id="flag-icon-css-it" viewBox="0 0 512 512">
+                                    <g fill-rule="evenodd" stroke-width="1pt">
+                                        <path fill="#fff" d="M0 0h512v512H0z" />
+                                        <path fill="#009246" d="M0 0h170.7v512H0z" />
+                                        <path fill="#ce2b37" d="M341.3 0H512v512H341.3z" />
+                                    </g>
+                                </svg>
+                                Italiano
+                            </a>
+                            <a class="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                                href="#">
+                                <svg class="w-3 h-3 rounded-full" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn"
+                                    viewBox="0 0 512 512">
+                                    <defs>
+                                        <path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z" />
+                                    </defs>
+                                    <path fill="#de2910" d="M0 0h512v512H0z" />
+                                    <use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)"
+                                        xlink:href="#a" />
+                                    <use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)"
+                                        xlink:href="#a" />
+                                    <use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)"
+                                        xlink:href="#a" />
+                                    <use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)"
+                                        xlink:href="#a" />
+                                    <use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)"
+                                        xlink:href="#a" />
+                                </svg>
+                                中文 (繁體)
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Language Dropdown -->
+
+                    <div
+                        class="space-s-4 text-sm ml-4 text-gray-500 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-200">
+                        &copy; <a class="underline underline-offset-2" href="#">Telemo</a>, All Right Reserved. By <a
+                            class="underline underline-offset-2" href="#">startelelogic</a>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex justify-between items-center">
+                    <div class="space-x-4 text-sm ml-4">
+                        <a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">Home</a>
+                        <a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">Cookies</a>
+                        <a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">Help</a>
+                        <a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                            href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="./node_modules/preline/dist/preline.js"></script>
+</body>
+
+</html>
